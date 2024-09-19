@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color: white;
+    background-color: #030615;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root {
+    @apply flex max-h-screen relative;
+  }
+
+  footer {
+    @apply flex justify-between gap-4 fixed bottom-0 left-0 w-full;
+  }
+
+  footer h2 {
+    @apply text-2xl;
+  }
+  footer h1 {
+    @apply text-xl font-semibold;
+  }
+}
