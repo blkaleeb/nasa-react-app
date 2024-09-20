@@ -5,7 +5,7 @@ import SideBar from './components/SideBar';
 import { useEffect } from 'react';
 
 function App() {
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(true);
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
 
@@ -50,7 +50,7 @@ function App() {
           <i className="fa-solid fa-gear opacity-20 text-5xl animate-spin"></i>
         </div>
       )}
-      {showModal && <SideBar data={data} handleToggleModal={handleToggleModal} />}
+      <SideBar data={data} showModal={showModal} handleToggleModal={handleToggleModal} />
       {data && <Footer data={data} handleToggleModal={handleToggleModal} />}
     </>
   );
