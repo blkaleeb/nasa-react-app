@@ -1,12 +1,12 @@
 import React from 'react';
 
-export default function Footer({ showModal, handleToggleModal }) {
+export default function Footer({ showModal, handleToggleModal, data }) {
   return (
-    <footer className="p-4">
+    <footer className="p-4 flex justify-between items-center gap-4 fixed bottom-0 left-0 w-full">
       <div className="absolute inset-0 -z-10 bg-gradient-to-t  from-[#030615]"></div>
-      <div className="flex flex-col">
-        <h2 className="font-bold">The Brutal Martian Landspace</h2>
-        <h1>APOD PROJECT</h1>
+      <div className="flex flex-col gap-2">
+        <h1 className="font-light">APOD PROJECT</h1>
+        <h2 className="font-bold">{data?.title}</h2>
       </div>
       <button
         onClick={() => handleToggleModal()}

@@ -17,18 +17,15 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
   #root {
     @apply flex max-h-screen relative;
-  }
-
-  footer {
-    @apply flex justify-between gap-4 fixed bottom-0 left-0 w-full;
-  }
-
-  footer h2 {
-    @apply text-2xl;
-  }
-  footer h1 {
-    @apply text-xl font-semibold;
   }
 }
